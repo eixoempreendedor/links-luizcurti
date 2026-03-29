@@ -16,7 +16,7 @@ const LINKS = [
   {
     label: "EIXO CEO",
     description: "Consultoria individual para donos de empresa",
-    href: "https://wa.me/556199319238?text=Quero%20saber%20mais%20sobre%20o%20Eixo%20CEO",
+    href: "https://wa.me/5561981726782?text=Quero%20saber%20mais%20sobre%20o%20Eixo%20CEO",
     highlight: false,
   },
   {
