@@ -120,7 +120,7 @@ export default function LinksPage() {
         </a>
         <span className="text-gray-muted/30">|</span>
         <a
-          href="https://wa.me/556199319238"
+          href="https://wa.me/5561981726782"
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm text-gray-muted transition-colors hover:text-gold"
