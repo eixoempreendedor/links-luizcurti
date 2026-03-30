@@ -8,12 +8,6 @@ const LINKS = [
     highlight: true,
   },
   {
-    label: "DESAFIO EMPREENDEDOR — ITUMBIARA",
-    description: "7 meses de trabalho real — Itumbiara e região",
-    href: "https://desafioempreendedoritumbiara.luizcurti.com.br",
-    highlight: false,
-  },
-  {
     label: "OPERAÇÃO 7D",
     description: "Organize seu negócio em 7 dias",
     href: "https://operacao7d.luizcurti.com.br",
@@ -30,6 +24,20 @@ const LINKS = [
     description: "Artigo: 7 erros que donos de PME cometem",
     href: "#",
     highlight: false,
+  },
+  {
+    label: "DESAFIO EMPREENDEDOR — BRASÍLIA",
+    description: "Em breve",
+    href: "#",
+    highlight: false,
+    disabled: true,
+  },
+  {
+    label: "DESAFIO EMPREENDEDOR — ITUMBIARA",
+    description: "Em breve",
+    href: "https://desafioempreendedoritumbiara.luizcurti.com.br",
+    highlight: false,
+    disabled: true,
   },
 ];
 
@@ -63,28 +71,41 @@ export default function LinksPage() {
 
       {/* LINKS */}
       <div className="mt-8 flex w-full max-w-sm flex-col gap-3">
-        {LINKS.map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`group block w-full border px-5 py-4 text-center transition-all hover:shadow-lg ${
-              link.highlight
-                ? "border-gold bg-gold/10 hover:bg-gold/20 hover:shadow-gold/20"
-                : "border-gray-muted/30 bg-black-soft hover:border-gold hover:shadow-gold/10"
-            }`}
-          >
-            <p
-              className={`font-heading text-lg tracking-wider uppercase ${
-                link.highlight ? "text-gold" : "text-white"
+        {LINKS.map((link) => {
+          const isDisabled = "disabled" in link && link.disabled;
+          const Tag = isDisabled ? "div" : "a";
+          const linkProps = isDisabled
+            ? {}
+            : { href: link.href, target: "_blank" as const, rel: "noopener noreferrer" };
+          return (
+            <Tag
+              key={link.label}
+              {...linkProps}
+              className={`group block w-full border px-5 py-4 text-center transition-all ${
+                isDisabled
+                  ? "cursor-default border-gray-muted/15 bg-black-soft/50 opacity-50"
+                  : link.highlight
+                    ? "border-gold bg-gold/10 hover:bg-gold/20 hover:shadow-lg hover:shadow-gold/20"
+                    : "border-gray-muted/30 bg-black-soft hover:border-gold hover:shadow-lg hover:shadow-gold/10"
               }`}
             >
-              {link.label}
-            </p>
-            <p className="mt-1 text-xs text-gray-text">{link.description}</p>
-          </a>
-        ))}
+              <p
+                className={`font-heading text-lg tracking-wider uppercase ${
+                  isDisabled
+                    ? "text-gray-muted"
+                    : link.highlight
+                      ? "text-gold"
+                      : "text-white"
+                }`}
+              >
+                {link.label}
+              </p>
+              <p className={`mt-1 text-xs ${isDisabled ? "text-gray-muted/60 italic" : "text-gray-text"}`}>
+                {link.description}
+              </p>
+            </Tag>
+          );
+        })}
       </div>
 
       {/* FOOTER */}
