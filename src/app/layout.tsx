@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
+import { GTMHead, GTMBody } from "@/components/GTM";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" className={`${bebasNeue.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body><GTMHead /><GTMBody />{children}</body>
     </html>
   );
 }
