@@ -2,16 +2,22 @@ import Image from "next/image";
 
 const LINKS = [
   {
+    label: "DESAFIO EMPREENDEDOR — ALEXÂNIA",
+    description: "7 meses de trabalho real — Primeira turma",
+    href: "https://desafioempreendedoralexania.luizcurti.com.br",
+    highlight: true,
+  },
+  {
+    label: "DESAFIO EMPREENDEDOR — ITUMBIARA",
+    description: "7 meses de trabalho real — Itumbiara e região",
+    href: "https://desafioempreendedoritumbiara.luizcurti.com.br",
+    highlight: false,
+  },
+  {
     label: "OPERAÇÃO 7D",
     description: "Organize seu negócio em 7 dias",
     href: "https://operacao7d.luizcurti.com.br",
     highlight: false,
-  },
-  {
-    label: "DESAFIO EMPREENDEDOR",
-    description: "7 meses de trabalho real — Alexânia",
-    href: "https://desafioempreendedoralexania.luizcurti.com.br",
-    highlight: true,
   },
   {
     label: "EIXO CEO",
