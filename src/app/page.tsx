@@ -2,17 +2,17 @@ import Image from "next/image";
 
 const LINKS = [
   {
-    label: "SEUS NÚMEROS, SUAS DECISÕES",
-    description: "10 calculadoras grátis + curso completo (R$197)",
-    href: "https://luizcurti.com.br/calculadoras",
-    highlight: true,
-    badge: "NOVO",
-  },
-  {
     label: "DESAFIO EMPREENDEDOR — ALEXÂNIA",
     description: "7 meses de trabalho real — Primeira turma",
     href: "https://desafioempreendedoralexania.luizcurti.com.br",
     highlight: true,
+  },
+  {
+    label: "SEUS NÚMEROS, SUAS DECISÕES",
+    description: "10 calculadoras grátis + curso completo (R$197)",
+    href: "https://luizcurti.com.br/ganhoporhora",
+    highlight: true,
+    badge: "NOVO",
   },
   {
     label: "OPERAÇÃO 7D",
@@ -28,8 +28,8 @@ const LINKS = [
   },
   {
     label: "CONTEÚDO GRATUITO",
-    description: "Artigo: 7 erros que donos de PME cometem",
-    href: "#",
+    description: "Calculadora grátis: descubra quanto você ganha por hora",
+    href: "https://luizcurti.com.br/ganhoporhora",
     highlight: false,
   },
   {
