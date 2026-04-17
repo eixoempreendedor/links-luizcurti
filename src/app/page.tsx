@@ -8,29 +8,11 @@ const LINKS = [
     highlight: true,
   },
   {
-    label: "SEUS NÚMEROS, SUAS DECISÕES",
-    description: "10 calculadoras grátis + curso completo (R$197)",
-    href: "https://luizcurti.com.br/ganhoporhora",
+    label: "EIXO EMPREENDEDOR — NEWSLETTER",
+    description: "1 insight por dia sobre empresários que crescem e os que travam — gratuita",
+    href: "https://substack.com/@luizcurti",
     highlight: true,
     badge: "NOVO",
-  },
-  {
-    label: "OPERAÇÃO 7D",
-    description: "Organize seu negócio em 7 dias",
-    href: "https://operacao7d.luizcurti.com.br",
-    highlight: false,
-  },
-  {
-    label: "EIXO CEO",
-    description: "Consultoria individual para donos de empresa",
-    href: "https://wa.me/5561981726782?text=Quero%20saber%20mais%20sobre%20o%20Eixo%20CEO",
-    highlight: false,
-  },
-  {
-    label: "CONTEÚDO GRATUITO",
-    description: "Calculadora grátis: descubra quanto você ganha por hora",
-    href: "https://luizcurti.com.br/ganhoporhora",
-    highlight: false,
   },
   {
     label: "DESAFIO EMPREENDEDOR — BRASÍLIA",
