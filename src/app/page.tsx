@@ -8,9 +8,9 @@ const LINKS = [
     highlight: true,
   },
   {
-    label: "EIXO EMPREENDEDOR — NEWSLETTER",
-    description: "1 insight por dia sobre empresários que crescem e os que travam — gratuita",
-    href: "https://substack.com/@luizcurti",
+    label: "EIXO EMPREENDEDOR — INSCREVA-SE",
+    description: "Toda quinta no seu email — 1 caso BR + 1 framework + 1 microação. Plus: faça o Mapa Eixo Lite (5 min, gratuito).",
+    href: "https://tools.eixoempreendedor.com.br",
     highlight: true,
     badge: "NOVO",
   },
