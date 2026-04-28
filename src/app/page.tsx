@@ -26,6 +26,7 @@ const SECTIONS: Section[] = [
         description: "7 meses trabalhando juntos.",
         href: "https://desafioempreendedoralexania.luizcurti.com.br",
         highlight: true,
+        badge: "TURMA ABERTA",
       },
       {
         label: "WHATSAPP DIRETO",
