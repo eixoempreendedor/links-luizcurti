@@ -18,10 +18,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Luiz Curti | Consultor de Resultados Empresariais",
-  description: "Seu negócio não precisa de mais esforço. Precisa de trabalho certo. Conheça a Operação 7D, o Desafio Empreendedor e o Eixo CEO.",
+  description:
+    "Construindo o sistema operacional do empresário brasileiro. Sem palestra. Lado a lado. Comece pelo Mapa Eixo Lite (5 min, gratuito).",
   openGraph: {
     title: "Luiz Curti | Links",
-    description: "Consultor de Resultados Empresariais — Operação 7D, Desafio Empreendedor, Eixo CEO",
+    description:
+      "Construindo o sistema operacional do empresário brasileiro — Desafio Empreendedor (turmas), Mapa Eixo Lite, Carta do Eixo.",
     type: "website",
     locale: "pt_BR",
   },
