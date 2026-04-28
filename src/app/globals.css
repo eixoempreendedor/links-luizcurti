@@ -9,6 +9,14 @@
   --color-gray-text: #A1A1AA;
   --font-heading: var(--font-bebas-neue), "Bebas Neue", sans-serif;
   --font-body: var(--font-inter), "Inter", sans-serif;
+
+  /* Tokens semânticos do design system Eixo (alias dos valores acima).
+     Compartilhados com eixo-tools — uso preferencial em código novo.
+     Os tokens originais (--color-gold, --font-heading) permanecem
+     como aliases pra retrocompatibilidade do código existente. */
+  --color-eixo-brand: #D4A017;
+  --color-eixo-brand-light: #E8B84D;
+  --font-eixo-display: var(--font-bebas-neue), "Bebas Neue", sans-serif;
 }
 
 html { scroll-behavior: smooth; }
