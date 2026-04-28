@@ -19,11 +19,11 @@ const SECTIONS: Section[] = [
   {
     id: "trabalhar-comigo",
     title: "Trabalhar comigo",
-    subtitle: "Turmas presenciais. Mão na obra.",
+    subtitle: "Turmas presenciais. Mão na massa!",
     links: [
       {
         label: "DESAFIO EMPREENDEDOR — ALEXÂNIA",
-        description: "7 meses construindo eixo empresarial junto. Turma rodando agora.",
+        description: "7 meses trabalhando juntos.",
         href: "https://desafioempreendedoralexania.luizcurti.com.br",
         highlight: true,
       },
