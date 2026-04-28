@@ -8,11 +8,17 @@ const LINKS = [
     highlight: true,
   },
   {
-    label: "EIXO EMPREENDEDOR — INSCREVA-SE",
-    description: "Toda quinta no seu email — 1 caso BR + 1 framework + 1 microação. Plus: faça o Mapa Eixo Lite (5 min, gratuito).",
-    href: "https://tools.eixoempreendedor.com.br",
+    label: "MAPA EIXO LITE — DIAGNÓSTICO 5 MIN",
+    description: "12 perguntas. Você sai com seu estágio empresarial + 3 talentos top + ação da semana gerada por IA. Gratuito.",
+    href: "https://tools.eixoempreendedor.com.br/mapa-lite",
     highlight: true,
     badge: "NOVO",
+  },
+  {
+    label: "EIXO EMPREENDEDOR — MANIFESTO",
+    description: "Sistema operacional do empresário brasileiro na era da IA",
+    href: "https://tools.eixoempreendedor.com.br",
+    highlight: false,
   },
   {
     label: "DESAFIO EMPREENDEDOR — BRASÍLIA",
