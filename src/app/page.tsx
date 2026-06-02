@@ -48,11 +48,6 @@ const SECTIONS: Section[] = [
         highlight: true,
         badge: "COMECE AQUI",
       },
-      {
-        label: "EIXO EMPREENDEDOR — MANIFESTO",
-        description: "O que a gente tá construindo, e por quê.",
-        href: "https://tools.eixoempreendedor.com.br",
-      },
     ],
   },
 ];
