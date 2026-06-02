@@ -22,9 +22,9 @@ const SECTIONS: Section[] = [
     subtitle: "Turmas presenciais. Mão na massa!",
     links: [
       {
-        label: "DESAFIO EMPREENDEDOR — ALEXÂNIA",
+        label: "DESAFIO EMPREENDEDOR — FORMOSA-GO",
         description: "7 meses trabalhando juntos.",
-        href: "https://desafioempreendedoralexania.luizcurti.com.br",
+        href: "https://desafioempreendedorformosa.luizcurti.com.br",
         highlight: true,
         badge: "TURMA ABERTA",
       },
@@ -41,10 +41,10 @@ const SECTIONS: Section[] = [
     subtitle: "O sistema. Acesso aberto.",
     links: [
       {
-        label: "MAPA EIXO LITE — DIAGNÓSTICO 5 MIN",
+        label: "DIAGNÓSTICO DE POSTURA FINANCEIRA — 2 MIN",
         description:
-          "12 perguntas. Você sai sabendo seu estágio, seus 3 talentos e a ação dessa semana. Já entra na Carta do Eixo. Gratuito.",
-        href: "https://tools.eixoempreendedor.com.br/mapa-lite",
+          "Onde tá o dinheiro vazando na sua empresa. 2 minutos, gratuito.",
+        href: "https://tally.so/r/9qoJ55",
         highlight: true,
         badge: "COMECE AQUI",
       },
@@ -55,6 +55,12 @@ const SECTIONS: Section[] = [
       },
     ],
   },
+];
+
+const COMING_SOON: string[] = [
+  "Desafio Empreendedor Brasília",
+  "Desafio Empreendedor Itumbiara",
+  "Desafio Empreendedor Alexânia",
 ];
 
 export default function LinksPage() {
@@ -127,6 +133,25 @@ export default function LinksPage() {
             ))}
           </section>
         ))}
+
+        {/* VAGAS EM BREVE — sombra, não clicável */}
+        <section className="flex flex-col gap-3 opacity-40">
+          <div className="border-b border-gray-muted/15 pb-2">
+            <h2 className="font-heading text-sm tracking-[0.25em] text-gray-muted uppercase">
+              Vagas em Breve
+            </h2>
+          </div>
+          {COMING_SOON.map((item) => (
+            <div
+              key={item}
+              className="w-full border border-dashed border-gray-muted/20 px-5 py-4 text-center select-none"
+            >
+              <p className="font-heading text-lg tracking-wider text-gray-muted uppercase">
+                {item}
+              </p>
+            </div>
+          ))}
+        </section>
       </div>
 
       {/* FOOTER */}
