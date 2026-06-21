@@ -15,6 +15,13 @@ type Section = {
   links: LinkItem[];
 };
 
+const WA_NUMERO = "5561981726782";
+
+function waCidade(cidade: string) {
+  const texto = `Olá, Luiz! Tenho interesse no Desafio Empreendedor em ${cidade}.`;
+  return `https://wa.me/${WA_NUMERO}?text=${encodeURIComponent(texto)}`;
+}
+
 const SECTIONS: Section[] = [
   {
     id: "trabalhar-comigo",
@@ -28,34 +35,30 @@ const SECTIONS: Section[] = [
         highlight: true,
         badge: "TURMA ABERTA",
       },
-      {
-        label: "WHATSAPP DIRETO",
-        description: "Pra quem já decidiu conversar.",
-        href: "https://wa.me/5561981726782",
-      },
     ],
   },
   {
-    id: "entrar-no-eixo",
-    title: "Entrar no Eixo",
-    subtitle: "O sistema. Acesso aberto.",
+    id: "vagas-em-breve",
+    title: "Vagas em Breve",
+    subtitle: "Chama no WhatsApp e entra na lista da sua cidade.",
     links: [
       {
-        label: "DIAGNÓSTICO DE POSTURA FINANCEIRA — 2 MIN",
-        description:
-          "Onde tá o dinheiro vazando na sua empresa. 2 minutos, gratuito.",
-        href: "https://tally.so/r/9qoJ55",
-        highlight: true,
-        badge: "COMECE AQUI",
+        label: "DESAFIO EMPREENDEDOR — BRASÍLIA",
+        description: "Entra na lista de espera.",
+        href: waCidade("Brasília"),
+      },
+      {
+        label: "DESAFIO EMPREENDEDOR — ITUMBIARA",
+        description: "Entra na lista de espera.",
+        href: waCidade("Itumbiara"),
+      },
+      {
+        label: "DESAFIO EMPREENDEDOR — ALEXÂNIA",
+        description: "Entra na lista de espera.",
+        href: waCidade("Alexânia"),
       },
     ],
   },
-];
-
-const COMING_SOON: string[] = [
-  "Desafio Empreendedor Brasília",
-  "Desafio Empreendedor Itumbiara",
-  "Desafio Empreendedor Alexânia",
 ];
 
 export default function LinksPage() {
@@ -128,25 +131,6 @@ export default function LinksPage() {
             ))}
           </section>
         ))}
-
-        {/* VAGAS EM BREVE — sombra, não clicável */}
-        <section className="flex flex-col gap-3 opacity-40">
-          <div className="border-b border-gray-muted/15 pb-2">
-            <h2 className="font-heading text-sm tracking-[0.25em] text-gray-muted uppercase">
-              Vagas em Breve
-            </h2>
-          </div>
-          {COMING_SOON.map((item) => (
-            <div
-              key={item}
-              className="w-full border border-dashed border-gray-muted/20 px-5 py-4 text-center select-none"
-            >
-              <p className="font-heading text-lg tracking-wider text-gray-muted uppercase">
-                {item}
-              </p>
-            </div>
-          ))}
-        </section>
       </div>
 
       {/* FOOTER */}
